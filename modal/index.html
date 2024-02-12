@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            background-color: #286090;
+            border: 0px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, .4);
+        }
+
+        .modal-details {
+            text-align: center;
+            background-color: #fefefe;
+            width: 80%;
+            border:none;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .heading{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .close:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Modal Component</h1>
+        <button class="btn">Open Modal</button>
+    </div>
+
+    <div class="modal">
+        <div class="modal-details">
+            <span class="heading">Modal</span>
+            <span class="close">&#x2716;</span>
+            <hr />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui itaque voluptatibus placeat aperiam quia
+                modi suscipit quisquam obcaecati nesciunt dolorem, quam enim deleniti nulla molestias omnis voluptatem
+                repellendus? Dolorum cumque corporis commodi. Quas ab praesentium quo, debitis itaque dolor culpa velit
+                rem distinctio vero, recusandae obcaecati necessitatibus aut eum quos?</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
